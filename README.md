@@ -114,4 +114,4 @@ LinkedIn: https://www.linkedin.com/in/noormalik56500/ 🔗
 License 📝
 This project is licensed under the MIT License. See the LICENSE file for details.
 Acknowledgments 🙏
-This simulation was inspired by real-world banking systems and operating system principles. Thanks to the open-source community for providing valuable resources and inspiration! 🎉
+This simulation was inspired by real-world banking systems and operating system principles. Thanks to the open-source community for providing valuable resources and inspiration! 🎉.

@@ -7,7 +7,7 @@ The Banking Transaction Processing System simulates a real-world banking environ
 Key Features 🌟
 
 Resource Management 🏧: Simulates availability of funds, ATMs, teller windows, and security tokens, with dynamic allocation and replenishment based on daily cycles or fund transfers.
-Concurrent Processing 🔄: Uses threads to handle multiple transactions simultaneously, with synchronization via mutexes, semaphores, and condition variables to prevent race conditions.
+Concurrent Processing 🔄: Uses POSIX threads to handle multiple transactions simultaneously, with synchronization via mutexes, semaphores, and condition variables to prevent race conditions.
 Priority Scheduling ⏰: Implements a priority-based scheduling algorithm to prioritize critical transactions (e.g., security alerts, VIP transfers) using separate queues for critical, high, medium, and low-priority transactions.
 Memory Management 💾: Manages account data, transaction logs, and security records using shared memory for inter-component communication and optimized data retrieval.
 I/O Simulation 🌐: Models external factors like network issues, maintenance windows, and security checks, introducing realistic delays and constraints.
@@ -37,13 +37,14 @@ Audit System 📝: Logs transactions and system events for traceability.
 I/O Simulator 🌍: Introduces realistic delays and constraints (e.g., network failures, maintenance).
 
 Priority Scheduling Logic ⏳
-
 Priority Levels:
+
 Critical: Security alerts, fraud detection, system maintenance, regulatory tasks. 🚨
 High: VIP transactions, large transfers, time-sensitive payments. 💰
 Medium: Regular transactions, standard transfers, inquiries. 📄
 Low: Balance checks, history requests, non-urgent updates. 📋
 
+Scheduling Details:
 
 Queues: Separate queues for each priority level, processed sequentially from critical to low. 📑
 Dynamic Adjustments: Priorities escalate for security incidents or unusual patterns, with real-time monitoring. 🔍
@@ -72,8 +73,8 @@ Dependencies: POSIX threads, Standard C++ Library, POSIX shared memory 📚
 
 Installation 📦
 
-Clone the repository:git clone https://github.com/<your-username>/banking-transaction-system.git
-cd banking-transaction-system
+Clone the repository:git clone https://github.com/noormalik33/Banking-Management-Simulator-Cpp-Ubuntu.git
+cd Banking-Management-Simulator-Cpp-Ubuntu
 
 
 Compile the source code:g++ -o banksim main.cpp -pthread
@@ -99,7 +100,7 @@ Example Output
 [INFO] System initialized: 5 ATMs, 10 tellers, $100000 funds available
 [CRITICAL] Security alert: Account 1001 flagged for review
 [HIGH] Processing transfer: $5000 from 1002 to 1003
-[MEDIUM] Deposit: $200 to account 1004
+ MEDIUM] Deposit: $200 to account 1004
 [LOW] Balance check: Account 1005 = $1500
 
 Contributing 🤝

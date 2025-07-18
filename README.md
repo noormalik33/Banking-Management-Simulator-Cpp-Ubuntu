@@ -110,7 +110,8 @@ For questions, feedback, or collaboration, reach out to:
 
 ## License 📝
 This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgments 🙏
+
+## Acknowledgments 🙏
 This simulation was inspired by real-world banking systems and operating system principles. Thanks to the open-source community for providing valuable resources and inspiration! 🎉
 
 ## 👩‍💻 Author
